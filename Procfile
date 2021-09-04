@@ -1,0 +1,1 @@
+web: node dist/src/shared/infra/http/index.js
