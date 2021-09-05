@@ -33,7 +33,7 @@ const callerProvider = async (
 
 	return res.status(200).json({
 		data: {
-			constacts: personList.length,
+			contacts: personList.length,
 		},
 	})
 }
