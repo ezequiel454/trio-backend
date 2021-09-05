@@ -8,7 +8,7 @@
     },
     "scripts": {
         "start": "node dist/infra/http/index.js",
-        "postinstall": "tsc && rm -v -rf src",
+        "postinstall": "tsc",
         "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/index.ts",
         "watch-ts": "tsc -w",
         "deploy": "git add . && git commit -m Heroku && git push heroku master"
