@@ -1,4 +1,4 @@
-import server from "./server"
+import server from './server'
 const API_PORT = process.env.API_PORT || 3001
 
 server.listen(API_PORT, (err) => {
