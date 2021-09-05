@@ -3,3 +3,8 @@ export interface Person {
 	first_name: string
 	last_name: string
 }
+
+export interface AxiosConfig {
+	url?: string
+	headers?: any
+}

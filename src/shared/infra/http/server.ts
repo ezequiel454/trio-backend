@@ -16,7 +16,7 @@ class Server {
 
 		this.middlewares()
 		this.routes()
-		//this.exception()
+		this.exception()
 	}
 
 	public express
@@ -30,6 +30,12 @@ class Server {
 
 	private routes(): void {
 		this.express.use(router)
+	}
+
+	exception() {
+		this.express.use(async (err, req, res, next) => {
+			return res.status(500).send(err)
+		})
 	}
 }
 export default new Server().express

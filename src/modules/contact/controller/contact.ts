@@ -3,10 +3,10 @@ import { SavedContactToDto } from '../dtos/response'
 import firebaseConnection from '../../../shared/infra/database/firebase-connection'
 
 export const createContact = async (
-	request: Person[]
+	personList: Person[]
 ): Promise<SavedContactToDto> => {
 	const batch = firebaseConnection.batch()
-	for (const person of request) {
+	for (const person of personList) {
 		const document = firebaseConnection.doc(`contacts/${person.email}`)
 		batch.set(
 			document,
@@ -18,6 +18,6 @@ export const createContact = async (
 	await batch.commit()
 
 	return {
-		contacts: request.length,
+		contacts: personList.length,
 	}
 }
