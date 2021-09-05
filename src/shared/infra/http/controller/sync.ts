@@ -3,7 +3,7 @@ import { getListAudience } from '../../../provider/mailchimp/controller/get-list
 import { getListId } from '../../../provider/mailchimp/controller/get-list-id'
 import { Request, Response } from 'express'
 import { getSendgridListId } from '../../../provider/sendgrid/controller/get-sendgrid-list-id'
-import { createSendgridContacts } from 'shared/provider/sendgrid/controller/create-sendgrid-contacts'
+import { createSendgridContacts } from '../../../provider//sendgrid/controller/create-sendgrid-contacts'
 
 export const syncContact = async (req: Request, res: Response) => {
 	const mailchimpId = await getListId()
