@@ -9,7 +9,7 @@ export const syncContact = async (req: Request, res: Response) => {
 	const mailchimpId = await getListId()
 	const personList = await getListAudience(mailchimpId)
 
-	// const { contacts } = await createContact(personList)
+	await createContact(personList)
 
 	const sendgridId = await getSendgridListId()
 	await createSendgridContacts(personList, sendgridId)

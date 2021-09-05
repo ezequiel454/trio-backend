@@ -34,6 +34,7 @@ class Server {
 
 	exception() {
 		this.express.use(async (err, req, res, next) => {
+			// save logs maybe
 			return res.status(500).send(err)
 		})
 	}
