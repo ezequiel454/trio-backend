@@ -3,10 +3,7 @@ import express from 'express'
 import cors from 'cors'
 import helmet from 'helmet'
 import compression from 'compression'
-import { createContact } from '../../../modulos/contact/controller/contact'
-import { uniqueNamesGenerator, Config, names } from 'unique-names-generator'
-import { getListId } from '../provider/mailchimp/controller/get-list-id'
-import { getListAudience } from '../provider/mailchimp/controller/get-list-audience'
+import { Config, names } from 'unique-names-generator'
 import router from './routes'
 
 const config: Config = {

@@ -1,13 +1,10 @@
-import { Person } from 'shared/infra/http/dto/common'
-import {
-	AudienceListResponseDto,
-	Members,
-} from 'shared/infra/http/dto/mailchimp'
+import { Person } from '../../../http/dto/common'
+import { AudienceListResponseDto, Members } from '../../../http/dto/mailchimp'
 import {
 	newExternalServiceError,
 	newMailchipEmptyAudianceList,
-} from 'shared/infra/http/error/construtors'
-import { ExternalService } from 'shared/infra/http/error/external-services'
+} from '../../../http/error/construtors'
+import { ExternalService } from '../../../http/error/external-services'
 import mailchimp from '../mailchimp'
 
 export const getListAudience = async (id: string): Promise<Person[]> => {

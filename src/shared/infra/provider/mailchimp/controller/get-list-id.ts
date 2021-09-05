@@ -1,9 +1,9 @@
-import { ListsResponseDto } from 'shared/infra/http/dto/mailchimp'
+import { ListsResponseDto } from '../../../http/dto/mailchimp'
 import {
 	newExternalServiceError,
 	newMailchipEmptyAudianceList,
-} from 'shared/infra/http/error/construtors'
-import { ExternalService } from 'shared/infra/http/error/external-services'
+} from '../../../http/error/construtors'
+import { ExternalService } from '../../../http/error/external-services'
 import mailchimp from '../mailchimp'
 
 export const getListId = async (): Promise<string> => {
