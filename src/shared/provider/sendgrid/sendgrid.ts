@@ -1,4 +1,3 @@
-import { Person } from '../../../shared/infra/http/dto/common'
 import { axiosConfig } from '../../util/axios'
 
 export const axiosConnectionSendgrid = () =>

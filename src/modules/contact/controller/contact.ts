@@ -1,5 +1,5 @@
 import { Person } from '../../../shared/infra/http/dto/common'
-import { SavedContactToDto } from '../dtos/response'
+import { SavedContactToDto } from '../../../shared/infra/http/dto/common'
 import firebaseConnection from '../../../shared/infra/database/firebase-connection'
 
 export const createContact = async (

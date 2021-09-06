@@ -8,3 +8,7 @@ export interface AxiosConfig {
 	url?: string
 	headers?: any
 }
+
+export interface SavedContactToDto {
+	contacts: number
+}
