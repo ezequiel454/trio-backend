@@ -8,4 +8,6 @@ admin.initializeApp({
 	}),
 })
 
-export default admin.firestore()
+const db = admin.firestore()
+
+export { admin, db }
