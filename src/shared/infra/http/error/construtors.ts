@@ -28,7 +28,7 @@ export const newMailchipEmptyAudianceList = (): SwpError =>
 
 export const newExternalServiceError = (
 	service: ExternalService,
-	msg: string,
+	msg: any,
 	errorCode: ErrorCode = ErrorCode.ExternalServerError
 ) =>
 	newTrioError(

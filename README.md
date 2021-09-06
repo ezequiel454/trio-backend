@@ -238,3 +238,4 @@ Some considerations to improvement the api.
 
 - We can create a interface to respond like was create to threat erros.
 - Added CD on github to direct deploy to heroku
+- Cover all tests
